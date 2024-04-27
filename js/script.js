@@ -59,16 +59,16 @@
             swiperWripperItem.classList.add('swiper-wrapper_height--auto');
             swiperWripperItem.classList.remove('swiper-wrapper');
             buttonSpan.textContent = 'Скрыть'
-            buttonImage.src = '../img/icon/expand1.svg';
+            buttonImage.src = './img/icon/expand1.svg';
             console.log('Кнопка открыть работает');
           }else{
             swiperWripperItem.classList.add('swiper-wrapper');
             swiperWripperItem.classList.remove('swiper-wrapper_height--auto');
-            buttonImage.src = '../img/icon/expand.svg';
+            buttonImage.src = './img/icon/expand.svg';
             buttonSpan.textContent = 'Показать все'
             console.log('Кнопка скрыть работает');
-          };
-        });
+          }
+        })
       };
       
       buttonClickOpenClose();
