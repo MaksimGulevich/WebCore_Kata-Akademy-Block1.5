@@ -39,7 +39,7 @@ body {
 .brands-list__item {
     position: relative;
     box-sizing: border-box;
-    width: 224px;
+    width: 240px;
     height: 72px;
     margin-right: 16px;
     background-color: white;
@@ -115,4 +115,8 @@ body {
 
 .swiper-pagination-bullet-active {
     background-color: #B5B6BC;
+}
+
+.brands__button {
+    display: none;
 }
