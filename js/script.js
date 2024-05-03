@@ -9,7 +9,9 @@
             const enableSwiper = function(className, settings) {
               swiper = new Swiper(className, settings);
         
-          
+              if (callback) {
+                callback(swiper);
+              }
             }
         
             const checker = function() {
@@ -35,43 +37,17 @@
         
           resizableSwiper(
             '(max-width: 767.99px)',
-            '.swiper', {
+            '.swiper',
+            {
               direction: 'horizontal',
               loop: true,
+              spaceBetween: 16,
+              slidesPerView: 'auto',
               pagination: {
-              el: '.swiper-pagination',
+                el: '.swiper-pagination',
+                clickable: true,
               },
-               slidesPerView: 'auto',
             },
             someFunc
           );
         });
-
-        let brandsList = document.querySelector('.brands');
-        let swiperWripperItem = brandsList.querySelector('.swiper-wrapper');
-        let buttonItem = brandsList.querySelector('.brands__button');
-        let buttonImage = brandsList.querySelector('.brands__img');
-        let buttonSpan = brandsList.querySelector('.brands__span');
-
-        let buttonClickOpenClose = function(){
-        buttonItem.addEventListener('click', function() {
-          if (swiperWripperItem.classList.contains('swiper-wrapper')){
-            swiperWripperItem.classList.add('swiper-wrapper_height--auto');
-            swiperWripperItem.classList.remove('swiper-wrapper');
-            buttonSpan.textContent = 'Скрыть'
-            buttonImage.src = './img/icon/expand1.svg';
-            console.log('Кнопка открыть работает');
-          }else{
-            swiperWripperItem.classList.add('swiper-wrapper');
-            swiperWripperItem.classList.remove('swiper-wrapper_height--auto');
-            buttonImage.src = './img/icon/expand.svg';
-            buttonSpan.textContent = 'Показать все'
-            console.log('Кнопка скрыть работает');
-          }
-        })
-      };
-      
-      buttonClickOpenClose();
-
-      
-     

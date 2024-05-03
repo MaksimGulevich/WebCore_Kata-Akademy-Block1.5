@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "TT lakes", sans-serif;
+    font-size: 16px;
+    color: #1B1C21;
+}
+
+.brands {
+    @media (max-width: 767.99px) {
+        min-width: 320px;
+    }
+    @media (min-width: 768px) and (max-width: 1119.99px) {
+        min-width: 768px;
+    }
+    @media (min-width: 1120px) {
+        width: 1120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    background-color: #F8F8F8;  
+}
+
+.brands__title {
+    padding: 16px;
+    background: linear-gradient(
+                to right,
+                #F8F8F8,
+                #FFFFFF 
+                );          
+}
+
+.brands__h2 {
+    margin: 0;
+    color: #7E7E82;
+    font-weight: 400; 
+    font-size: 16px;
+    text-transform:uppercase; 
+}
+
+.brands__list{
+    margin: 0;
+    padding: 1px;
+    background-color: #b8cdcc;
+
+}
+
+.brands-list__item {
+    @media (max-width: 767.99px) {
+        width: 240px;
+        
+    }
+    @media (min-width: 768px) and (max-width: 1119.99px) {
+        width: 224px;
+    }
+    @media (min-width: 1120px) {
+        width: 240px;
+        margin-right: 16px;
+    }
+    position: relative;
+    box-sizing: border-box;
+    height: 72px;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+}
+
+.border__image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.brands-list__item::after {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-right: 16px;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+}
+
+.brands-list__item::before {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-right: 36px;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #FF3E79;
+    border-right: 2px solid #FF3E79;
+    transform: rotate(45deg);
+
+    
+}
+
+
+.swiper {
+    @media (max-width: 767.99px) {
+        overflow: hidden;
+        min-width: 320px;
+        height: 90px;
+        background-color: #F8F8F8;
+        padding: 16px 0 40px 16px ;
+    }
+    @media (min-width: 768px) and (max-width: 1119.99px) {
+        padding-bottom: 20px;
+    }
+    @media (min-width: 1120px) {
+        padding-bottom: 20px;
+    }
+  }
+
+  .brands_swiper-wrapper {
+    @media (min-width: 768px) and (max-width: 1119.99px) {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 224px);
+        grid-template-rows: repeat(auto-fit, 72px);
+        overflow: hidden;
+        min-width: 768px;
+        height: 200px;
+        justify-content: space-between;
+        gap:16px;
+        background-color: #F8F8F8;
+        padding: 24px;
+    }
+    @media (min-width: 1120px) {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(4, 240px);
+        overflow: hidden;
+        width: 1120px;
+        height: 200px;
+        gap:16px 32px;
+        background-color: #F8F8F8;
+        padding: 32px;
+    }
+  }
+
+  .swiper-wrapper_height--auto {
+    @media (min-width: 768px) and (max-width: 1119.99px) {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 224px);
+        grid-template-rows: repeat(auto-fit, 72px);
+        overflow: hidden;
+        min-width: 768px;
+        height: auto;
+        justify-content: space-between;
+        gap:16px;
+        background-color: #F8F8F8;
+        padding: 24px;
+    }
+    @media (min-width: 1120px) {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(4, 240px);
+        overflow: hidden;
+        width: 1120px;
+        height: auto;
+        gap:16px 32px;
+        background-color: #F8F8F8;
+        padding: 32px;
+    }   
+  }
+.swiper-slide {
+    @media (max-width: 767.99px) {
+        width: auto;
+    }
+    @media (min-width: 768px) and (max-width: 1119.99px) {
+        margin:0;
+        padding: 0;
+    }
+    @media (min-width: 1120px) {
+        margin:0;
+        padding: 0;
+    }
+}
+
+  .swiper-pagination {
+    @media (max-width: 767.99px) {
+        position: relative;
+    }
+    @media (min-width: 768px) and (max-width: 1119.99px) {
+        display: none;
+    }
+    @media (min-width: 1120px) {
+        display: none;
+    }
+  }
+
+.swiper-pagination-bullet {
+    @media (max-width: 767.99px) {
+        width: 12px;
+        height: 12px;
+        background-color: #DDDDDD;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    @media (max-width: 767.99px) {
+        background-color: #B5B6BC;
+    }
+}
+
+.brands__button {
+    @media (max-width: 767.99px) {
+        display: none;
+    }
+    @media (min-width: 768px) and (max-width: 1119.99px) {
+        margin-left: 24px;
+        padding:0;
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color:#F8F8F8;
+        font-family: "TT lakes", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #1B1C21;
+    }
+    @media (min-width: 1120px) {
+        margin-left: 24px;
+        padding:0;
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color:#F8F8F8;
+        font-family: "TT lakes", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #1B1C21;
+    }
+  }
