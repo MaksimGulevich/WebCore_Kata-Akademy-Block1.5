@@ -7,13 +7,13 @@ body {
 }
 
 .brands {
-    @media (max-width: 767.99px) {
+    @media screen and (max-width: 767.88px) {
         min-width: 320px;
     }
-    @media (min-width: 768px) and (max-width: 1119.99px) {
+    @media screen and (min-width: 768px) {
         min-width: 768px;
     }
-    @media (min-width: 1120px) {
+    @media screen and (min-width: 1120px) {
         width: 1120px;
         margin-left: auto;
         margin-right: auto;
@@ -46,14 +46,14 @@ body {
 }
 
 .brands-list__item {
-    @media (max-width: 767.99px) {
+    @media screen and (max-width: 767.88px) {
         width: 240px;
         
     }
-    @media (min-width: 768px) and (max-width: 1119.99px) {
+    @media screen and (min-width: 768px) {
         width: 224px;
     }
-    @media (min-width: 1120px) {
+    @media screen and (min-width: 1120px) {
         width: 240px;
         margin-right: 16px;
     }
@@ -110,23 +110,23 @@ body {
 
 
 .swiper {
-    @media (max-width: 767.99px) {
+    @media screen and (max-width: 767.88px) {
         overflow: hidden;
         min-width: 320px;
         height: 90px;
         background-color: #F8F8F8;
         padding: 16px 0 40px 16px ;
     }
-    @media (min-width: 768px) and (max-width: 1119.99px) {
+    @media screen and (min-width: 768px) {
         padding-bottom: 20px;
     }
-    @media (min-width: 1120px) {
+    @media screen and (min-width: 1120px) {
         padding-bottom: 20px;
     }
   }
 
   .brands_swiper-wrapper {
-    @media (min-width: 768px) and (max-width: 1119.99px) {
+    @media screen and (min-width: 768px) {
         box-sizing: border-box;
         display: grid;
         grid-template-columns: repeat(auto-fit, 224px);
@@ -139,7 +139,7 @@ body {
         background-color: #F8F8F8;
         padding: 24px;
     }
-    @media (min-width: 1120px) {
+    @media screen and (min-width: 1120px) {
         box-sizing: border-box;
         display: grid;
         grid-template-columns: repeat(4, 240px);
@@ -153,7 +153,7 @@ body {
   }
 
   .swiper-wrapper_height--auto {
-    @media (min-width: 768px) and (max-width: 1119.99px) {
+    @media screen and (min-width: 768px) {
         box-sizing: border-box;
         display: grid;
         grid-template-columns: repeat(auto-fit, 224px);
@@ -166,7 +166,7 @@ body {
         background-color: #F8F8F8;
         padding: 24px;
     }
-    @media (min-width: 1120px) {
+    @media screen and (min-width: 1120px) {
         box-sizing: border-box;
         display: grid;
         grid-template-columns: repeat(4, 240px);
@@ -179,33 +179,33 @@ body {
     }   
   }
 .swiper-slide {
-    @media (max-width: 767.99px) {
+    @media screen and (max-width: 767.88px) {
         width: auto;
     }
-    @media (min-width: 768px) and (max-width: 1119.99px) {
+    @media screen and (min-width: 768px) {
         margin:0;
         padding: 0;
     }
-    @media (min-width: 1120px) {
+    @media screen and (min-width: 1120px) {
         margin:0;
         padding: 0;
     }
 }
 
   .swiper-pagination {
-    @media (max-width: 767.99px) {
+    @media screen and (max-width: 767.88px) {
         position: relative;
     }
-    @media (min-width: 768px) and (max-width: 1119.99px) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
-    @media (min-width: 1120px) {
+    @media screen and (min-width: 1120px) {
         display: none;
     }
   }
 
 .swiper-pagination-bullet {
-    @media (max-width: 767.99px) {
+    @media screen and (max-width: 767.88px) {
         width: 12px;
         height: 12px;
         background-color: #DDDDDD;
@@ -213,16 +213,16 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-    @media (max-width: 767.99px) {
+    @media screen and (max-width: 767.88px) {
         background-color: #B5B6BC;
     }
 }
 
 .brands__button {
-    @media (max-width: 767.99px) {
+    @media screen and (max-width: 767.88px) {
         display: none;
     }
-    @media (min-width: 768px) and (max-width: 1119.99px) {
+    @media screen and (min-width: 768px) {
         margin-left: 24px;
         padding:0;
         display: flex;
@@ -234,7 +234,7 @@ body {
         font-weight: 500;
         color: #1B1C21;
     }
-    @media (min-width: 1120px) {
+    @media screen and (min-width: 1120px) {
         margin-left: 24px;
         padding:0;
         display: flex;

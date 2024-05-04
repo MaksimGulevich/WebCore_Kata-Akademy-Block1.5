@@ -36,7 +36,7 @@
           };
         
           resizableSwiper(
-            '(max-width: 767.99px)',
+            '(max-width: 767.98px)',
             '.swiper',
             {
               direction: 'horizontal',
